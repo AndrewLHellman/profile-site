@@ -1,0 +1,149 @@
+body {
+    font-family: Helvetica;
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    margin: 12px;
+    width: calc(100% - 24px);
+    border-radius: 16px;
+    color: #1C0F13;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    border-radius: 16px;
+    padding: 8px 16px;
+}
+
+nav a:hover {
+    background-color: #256D1B;
+    color: white;
+}
+
+main {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    background-color: #256D1B;
+    z-index: -1;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/AndrewHellman.jpg");
+    background-position: center top;
+    overflow: hidden;
+    opacity: 25%;
+    z-index: -1;
+}
+
+.title {
+    padding-top: 50px;
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    font-size: min(12vh, 8vw);
+    margin: 0;
+    color: #fff;
+    opacity: 100%;
+}
+
+article {
+    background-color: #fff;
+    color: #1C0F13;
+    margin: 12px;
+    border-radius: 16px;
+    padding: 8px 12px;
+}
+
+article h2 {
+    margin: 0 0 0 5%;
+}
+
+article p {
+    margin: 0;
+    font-size: 16px;
+}
+
+footer {
+    width: 100%;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+}
+
+form, .pages {
+    margin-top: 74px;
+    height: calc(100vh - 124px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form h2 {
+    color: #fff;
+}
+
+fieldset {
+    background-color: #fff;
+    border: none;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+fieldset > * {
+    margin-top: 8px;
+}
+
+.pages {
+    color: #fff;
+}
+
+.pages a {
+    color: white;
+    font-size: 2em;
+}
+
+.gallery {
+    margin-top: 74px;
+    height: calc(100vh - 156px);
+    width: calc(100% - 32px);
+    display: grid;
+    grid-template: repeat(3, calc(((100vh - 156px)/2))) / repeat(3, 1fr);
+    padding: 16px;
+    gap: 16px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 16px;
+}
